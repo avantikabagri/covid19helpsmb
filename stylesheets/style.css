@@ -1,0 +1,248 @@
+html{
+	width: 100%;
+	height: 100%
+}
+
+body{
+	background-color: #FBFBF4;
+	font-family: 'Gothic', sans-serif;
+	width: 100%;
+	height: 100%;
+}
+
+header{
+	display: grid;
+	grid-template-rows: 1fr 1fr 1fr;
+	grid-template-columns: 25px auto 25px;
+}
+
+header h1{
+	grid-row: 2;
+	grid-column: 2;
+	text-align: center;
+	font-size: 15px;
+	color: #212D40;
+}
+
+header h2{
+	grid-row: 3;
+	grid-column: 2;
+	text-align: center;
+	font-size: 12px;
+	color: #212D40;
+}
+
+header h2 a{
+	color: #77BEE5;
+}
+
+header h2 a:hover{
+	text-decoration: underline;
+}
+
+a:link{
+	text-decoration: none;
+}
+.skip a{
+  background: white;
+	color: purple;
+  left: 0;
+  padding: 5px;
+  -webkit-transition: top 1s ease-out;
+  transition: top 1s ease-out;
+  z-index: 1;
+  position: absolute;
+  top: -40px;
+}
+
+.skip a:focus{
+  top: 0px;
+}
+
+nav{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: center;
+	min-height: 40px;
+	background-color: #212D40;
+}
+
+nav li{
+	display: inline;
+}
+
+nav a{
+	color: #FBFBF4;
+}
+nav a:hover{
+	color: #B5E2FA;
+}
+
+nav .current{
+	color: #B5E2FA;
+}
+
+#home{
+	display: grid;
+	grid-template-columns: 20px 1fr 1fr 20px;
+	grid-template-rows: repeat(auto, auto);
+}
+
+#home p:nth-child(odd){
+	grid-column: 2;
+	justify-content: center;
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+}
+
+#home p:nth-child(even){
+	grid-column: 3;
+	justify-content: center;
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+}
+
+#home p{
+	font-size: 18px;
+	text-align: center;
+}
+
+#home img{
+	height: 100px;;
+	width: 100px;
+	align-content: center;
+}
+
+#image h3{
+	text-align: center;
+}
+
+#image h3 img{
+	height: 140px;
+	width: auto;
+}
+
+#contact{
+	text-align: center;
+}
+
+#contact h2 img{
+	height: 140px;
+	width: auto;
+}
+
+#contact a{
+	color: #C89FA3;
+}
+
+#contact a:hover{
+	text-decoration: underline;
+}
+
+.contact{
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-rows: 1fr 1fr 1fr;
+	grid-row-gap: 10px;
+	justify-content: center;
+}
+
+.contacts{
+	grid-row: 2;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-rows: repeat(auto, auto);
+	grid-row-gap: 10px;
+	justify-content: center;
+}
+
+.contact_box{
+	grid-column: 2;
+	height: 120px;
+	width: 350px;
+	background-color: #B5E2FA;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	border-radius: 25px;
+	border: 2px solid #212D40;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.businesses{
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-rows: repeat(auto, auto);
+	grid-row-gap: 10px;
+	justify-content: center;
+}
+
+.business_box{
+	grid-column: 2;
+	height: 120px;
+	width: 350px;
+	background-color: #B5E2FA;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	border-radius: 25px;
+	border: 2px solid #212D40;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.business_name{
+	font-size: 20px;
+}
+
+.business_name a{
+		color: #212D40;
+}
+
+.business_name a:hover{
+	color: #C89FA3;
+}
+
+.business_location{
+	font-size: 12px;
+	color: #212D40;
+}
+
+.gofundme_button img{
+	height: auto;
+	width: 110px;
+	justify-content: flex-end;
+
+}
+
+#foot{
+  background-color: #212D40;
+  color: #FBFBF4;
+  position: relative;
+	bottom: 0;
+	width: 100%;
+	padding-top: 10px;
+	padding-bottom: 10px;
+  text-align: center;
+	font-size: 12px;
+	margin-top: 10px;
+}
+
+#foot2{
+  background-color: #212D40;
+  color: #FBFBF4;
+  position: absolute;
+	bottom: 0;
+	width: 100%;
+	padding-top: 10px;
+	padding-bottom: 10px;
+  text-align: center;
+	font-size: 12px;
+	margin-top: 10px;
+}
